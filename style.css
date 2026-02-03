@@ -90,3 +90,17 @@ h1 {
         padding: 12px; /* 터치하기 편하게 패딩을 늘림 */
     }
 }
+
+@media (max-width: 480px) {
+    .captcha-box {
+        width: calc(100% - 40px); /* 화면 전체에서 양쪽 20px씩 여백 제외 */
+        max-width: 350px; /* 너무 커지지 않게 최대치 제한 */
+        margin: 0 auto; /* 중앙 정렬 */
+        padding: 20px;
+    }
+
+    .image-area img {
+        width: 100%; /* 이미지가 박스보다 커서 튀어나가는 것 방지 */
+        height: auto;
+    }
+}
